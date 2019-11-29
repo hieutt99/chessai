@@ -256,7 +256,7 @@ def drawChess(screen,board):
     width = 60
     height = 60
     # black = (60,134,244)
-    black  = (64,64,64)
+    black  = (128,128,128)
     # white = (143,155,175)
     white = (255,153,153)
     orange = (255,165,0)
