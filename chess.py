@@ -46,17 +46,17 @@ def run_game():
             # print("da update")
             settings.updateScreen(screen,board)
             # bot.checkEndGame(board)
-            if  whiteKingCheck(board) == True : 
-                if checkMate(board) == True:
+            if  settings.whiteKingCheck(board) == True : 
+                if settings.checkMate(board) == True:
                     board.end_game = True
                 else :
                     print("White King is checked ")
-            elif blackKingCheck(board) == True :
-                if checkMate(board) == True:
+            elif settings.blackKingCheck(board) == True :
+                if settings.checkMate(board) == True:
                     board.end_game = True
                 else :
                     print("Black King is checked")
-            if checkStalemate(board) == True :
+            if settings.checkStalemate(board) == True :
                 board.end_game = True
             bot.evaluate(board)
             print("Black bot turn over, Board Analysis : "+str(board.evaluation))

@@ -98,13 +98,13 @@ def evaluate(board):
 		mobility -= len(temp)*piece[0].alliance
 	settings.kingPosition(board)
 	if 	board.whiteKing[0].moved == True and board.whiteKing[0].castle == True : 
-		extra_point += 100*(-1)
+		extra_point += 20*(-1)
 	elif board.whiteKing[0].moved == True and board.whiteKing[0].castle == False : 
-		extra_point -= 100*(-1)
+		extra_point -= 20*(-1)
 	if 	board.blackKing[0].moved == True and board.blackKing[0].castle == True :
-		extra_point	+= 100*1
+		extra_point	+= 20*1
 	elif board.blackKing[0].moved == True and board.blackKing[0].castle == False : 
-		extra_point -= 100*1 
+		extra_point -= 20*1 
 
 	checkEndGame(board)
 	if 	board.end_game == False:

@@ -26,7 +26,7 @@ def check_events(screen,board):
             if  board.selectedStartTile.pieceOnTile.symbol() != " " and\
                 board.selectedStartTile.pieceOnTile.alliance == board.turn:
                 board.legalMoves = board.selectedStartTile.pieceOnTile.availableMoves(board)
-                print(board.legalMoves)
+                # print(board.legalMoves)
                 for key, value in board.default.items():
                     if  board.selectedStartTile.pieceOnTile.position == value:
                         board.start = key 
