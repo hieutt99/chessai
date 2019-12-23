@@ -13,4 +13,4 @@
 *run \
   **./chess.sh\
 *or \
-  **python chess.py\
+  **python chess.py
