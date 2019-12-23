@@ -4,13 +4,13 @@
 ## last update seems to be the best version so far
 ## 29.11.2019
 
-# usage
+# usage:
 
 *install pip (in case you have not installed it yet) :
-  $sudo apt-get install python3-pip
+  **sudo apt-get install python3-pip
 *install python pygame
-  $pip install pygame
+  **pip install pygame
 *run 
-  $./chess.sh
+  **./chess.sh
 *or 
-  $python chess.py
+  **python chess.py
